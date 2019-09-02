@@ -35,7 +35,6 @@ public class A1Jedi {
 				for (int h=0; h<itemsNum; h++) {
 					if (name.equals(items[h])) {
 						itemNum[h] +=  quantity;
-						customer[h] ++;
 						index[h]++;
 					}
 					
@@ -43,17 +42,22 @@ public class A1Jedi {
 		
 			
 			}
-
+			for (int l=itemsNum; l > 0 ; l--) {
+				if (index[l] > 0) {
+					customer[l]++;
+				}
+			}
 			
 		}
 		scan.close();
 		
 		for (int a = 0; a < itemsNum; a++) {
-			if (customer[a] == 0) { 
-				System.out.println("No customers bought " + items[a]);
+			if (customer[a] != 0) { 
+				System.out.println(customer[a] + " customers bought " + itemNum[a] +" " + items[a]);
 
 			} else {
-				System.out.println(customer[a] + " customers bought " + itemNum[a] +" " + items[a]);
+				System.out.println("No customers bought " + items[a]);
+				
 			}
 		}
 	

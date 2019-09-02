@@ -60,7 +60,7 @@ public class A1Adept {
 		}
 		
 		int minIndex = 0;
-		double min = 0.0;
+		double min = cost[0];
 		for (int b=0; b<custNum; b++) {
 			if(cost[b] < min) {
 				min = cost[b];

@@ -49,11 +49,11 @@ public class A1Jedi {
 		scan.close();
 		
 		for (int a = 0; a < itemsNum; a++) {
-			if (customer[a] != 0) { 
-				System.out.println(customer[a] + " customers bought " + itemNum[a] +" " + items[a]);
+			if (customer[a] == 0) { 
+				System.out.println("No customers bought " + items[a]);
 
 			} else {
-				System.out.println("No customers bought " + items[a]);
+				System.out.println(customer[a] + " customers bought " + itemNum[a] +" " + items[a]);
 			}
 		}
 	

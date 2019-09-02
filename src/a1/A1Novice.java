@@ -23,7 +23,7 @@ public class A1Novice {
 			
 			for (int j=0; j < itemEach; j++) {
 				int quanEach = scan.nextInt();
-//				String name = scan.next();
+				String name = scan.next();
 				double price = scan.nextDouble();
 				total += quanEach * price;
 				
